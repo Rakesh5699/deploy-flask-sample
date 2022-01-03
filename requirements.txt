@@ -1,6 +1,5 @@
 certifi==2021.10.8
 click==8.0.3
-Jinja2 @ file:///tmp/build/80754af9/jinja2_1635780242639/work
 wincertstore==0.2
 werkzeug-2.0.2
 dataclasses-0.8
