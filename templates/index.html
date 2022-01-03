@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculater</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <h1 style="color: red;"> CALCULATION </h1> 
+        <div>
+            <form action="/results" method="post">
+                <input type="text" name="num1" placeholder="Numner1" required>
+                <input type="text" name="num2" placeholder="Number2" required>
+                <select name="operator" required> 
+                    <option valu="add" >ADDITION</option>
+                    <option valu="sub"> SUBSTRACTION</option>
+                    <option valu="mul"> MULTIPICATION</option>
+                    <option valu="div"> DIVISION</option>
+                </select><br><br>
+                <button type="submit">Calculate</button> 
+            </form>
+        </div >
+        {% if result %} 
+            <h3 style="color: red;">{{result}}</h3> 
+        {% endif %}
+    </div>
+</body>
+</html>
+<h1 > </h1>
